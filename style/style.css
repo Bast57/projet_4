@@ -1,0 +1,341 @@
+            /*****Feuille de style CSS PROJET 4*****/
+
+* {
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+box-sizing: border-box;
+}
+
+:root {
+    --main-color: #9356DC;
+    --main-color2: #FF79DA;
+    --grey-color1: #F6F6F6;
+    --grey-color2: #EAEAEA;
+    --grey-footer: #353535;
+    --green1:#008766;
+    --green2:#99E2D0;
+}
+
+p {
+margin: 0;
+}
+
+        /****header****/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    margin: 20px 10px 0 10px;
+}
+
+.header--logo {
+    width: 162px;
+    height: 44px;
+}
+
+.header--div1 {
+    padding: 9px 0;
+}
+
+.header--div2 {
+    background-color: var(--grey-color2);
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.header--div2-txt {
+    font-weight: 600;
+    color: var(--grey-footer);
+}
+
+        /****Main****/
+
+main {
+    background-color: white;
+    border: 0px;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    z-index: 1;
+}
+
+main a {
+    text-decoration: none;
+    color: black;
+}
+
+.main--zone1 {
+    text-align: center;
+    background-color: var(--grey-color1);
+    padding: 20px 0 50px 0;
+}
+
+.main--zone1 h1 {
+    margin: 0;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.main--zone1--button{
+    border: var(--main-color);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    width: 218px;
+    height: 50px;
+    color: white;
+    background:linear-gradient(to top, #9356DC, #FF79DA);
+}
+
+.main--zone1--br {
+    display: block;
+}
+
+.main--zone2 {
+    display: flex;
+    flex-direction: column;
+    height: 440px;
+    padding: 40px;
+}
+
+.main--zone2-h2 {
+    margin: 10px 0 25px -15px;
+}
+
+.main--zone2-logocolor {
+    color: var(--grey-footer);
+    margin: 0 10px 0 5px;
+}
+
+.main--zone2-zonediv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.main--zone2-div1 , .main--zone2-div2 , .main--zone2-div3 {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    width: 330px;
+    height: 72px;
+    background-color: var(--grey-color1);
+    padding: 0 20px;
+    position: relative;
+}
+
+.main--zone2-cerclelogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -15px;
+    background-color: var(--main-color);
+    color: white;
+    border: solid 0px;
+    border-radius: 25px;
+    padding: 0 7px 2px 7px;
+}
+
+.main--zone2-div1_texte {
+    text-align: center;
+    flex: 1;
+}
+
+.main--zone2-logo_boutique {
+    color: var(--main-color);
+}
+
+.heart--icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+}
+.heart--icon-empty {
+    position: absolute;
+    color: black;
+}
+.heart--icon-full {
+    position: absolute;
+    opacity: 0;
+    background: linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 400ms;
+}
+.heart--icon:hover .heart--icon-full {
+    opacity: 1;
+}
+.heart--icon:hover .heart--icon-empty {
+    opacity: 0;
+}
+
+.main--zone3 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey-color1);
+    padding: 18px;
+    padding-bottom: 50px
+}
+
+.main--zone3 img {
+    width: 100%;
+    height: 231px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.main--zone3-div {
+    background-color: white;
+    border: 1px var(--grey-color1);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.main--zone3-divtxt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.main--zone3-nouveau_img {
+width: 80px;
+height: 30px;
+background-color: var(--green2);
+color: var(--green1);
+z-index: 1;
+}
+
+        /*****Footer*****/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey-footer);
+    color: white;
+}
+Footer a {
+color: white;
+text-decoration: none;
+}
+
+.Footer-img {
+    width: 138px;
+    height: 27px;
+    filter: brightness(0) invert(1);    
+    margin: 20px;}
+
+.Footer-txt {
+    padding: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+        /***** Responsive*****/
+    /*Responsive for large screen*/
+
+@media (min-width: 800px) {
+
+.main--zone2 , .main--zone3 {
+    padding: 0 100px 20px 100px;
+}
+
+    /**main zone 1**/
+
+    .main--zone1--br {
+        display: none;
+    }
+
+.main--zone1 {
+    padding-bottom: 30px;
+}
+
+.main--zone1 h1 {
+    margin-bottom: 25px;
+}
+
+    /**main zone 2 **/
+
+.main--zone2 {
+    height: 220px;
+    padding-top: 20px;}
+
+.main--zone2-zonediv {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+
+.main--zone2-cerclelogo_1 , .main--zone2-cerclelogo_2 , .main--zone2-cerclelogo_3 {
+    transform: translateX(0);
+}
+
+    /**main zone 3**/
+.main--zone3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 45% 45%;
+    gap: 0 100px ;
+}
+
+.main--zone3-h2 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.main--zone3-div1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.main--zone3-div2 {
+    grid-column: 2;
+    grid-row: 2;
+    }
+
+.main--zone3-div3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.main--zone3-div4 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+        /**Footer**/
+
+Footer {
+    flex-direction: row-reverse;
+    align-items: end;
+    height: 114px;
+    gap: 50px;
+    padding-bottom: 5px;
+}
+
+.Footer-txt {
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    gap: 20px;
+}
+
+}
